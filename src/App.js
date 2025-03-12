@@ -5,6 +5,9 @@ import msgIcon from './assets/message.svg';
 import home from './assets/home.svg';
 import saved from './assets/bookmark.svg';
 import pro from './assets/rocket.svg';
+import sendBtn from './assets/send.svg';
+import chatBtn from './assets/chatgptLogo.svg';
+import userIcon from './assets/me01.jpg';
 
 function App() {
   return (
@@ -19,13 +22,26 @@ function App() {
           </div>
         </div>
         <div className="lowerSide">
-          <div className="listItems"><img src={home} alt="Home" className="listitemsImg" />Home</div>
-          <div className="listItems"><img src={saved} alt="Saved" className="listitemsImg" />Saved</div>
-          <div className="listItems"><img src={pro} alt="Upgrade" className="listitemsImg" />Upgrade to Pro</div>
+          <div className="listItems"><img src={home} alt="Home" className="listItemsImg" />Home</div>
+          <div className="listItems"><img src={saved} alt="Saved" className="listItemsImg" />Saved</div>
+          <div className="listItems"><img src={pro} alt="Upgrade" className="listItemsImg" />Upgrade to Pro</div>
         </div>
       </div>
       <div className="main">
-
+        <div className="chats">
+          <div className="chat"><img src={userIcon} alt="ChatGPT" className="chatImg" />
+            <p className="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          </div>
+          <div className="chat bot"><img src={chatBtn} alt="User" className="chatImg" />
+            <p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe ratione sed unde beatae nemo iure voluptate doloribus minima reprehenderit illum sint autem explicabo voluptatem natus optio repellendus, dicta nulla, sapiente assumenda illo quaerat! Culpa neque deserunt beatae doloremque recusandae, quisquam quod dolor obcaecati possimus iusto, praesentium, velit quibusdam autem laborum dolorem nobis illum voluptatibus. Voluptates numquam tempora aperiam nulla, modi quas nobis similique? Quaerat saepe animi sequi expedita unde fugiat voluptatibus nulla suscipit error reprehenderit tempora officia amet voluptatem aliquam, illo eaque debitis quos alias praesentium repellat beatae quo. Eius error fugiat placeat ipsam hic deserunt aspernatur est beatae?</p>
+          </div>
+        </div>
+        <div className="chatFooter">
+          <div className="inp">
+            <input type="text" placeholder='Send a Message'/><button className="send"><img src={sendBtn} alt="Send" /></button>
+          </div>
+          <p>ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT October 05 Version</p>
+        </div>
       </div>
     </div>
   );
